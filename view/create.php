@@ -5,6 +5,7 @@
             </div>
         </div>
         <hr class="bg-info">
+        <div id="alert"></div>
           <form class="ui form" method="post" id="insert-form">
   <div class="seven wide field">
     <h3 class="text-danger">ภาคเรียน/ปีการศึกษา</h3>
@@ -17,6 +18,7 @@
       </div>
       <div class="field">
         <input maxlength="4" type="text" name="termyear" placeholder="ปีการศึกษา">
+
       </div>
     </div>
   </div>
@@ -24,7 +26,7 @@
     <h3 class="text-danger">รายละเอียด</h3>
     <div class="fields">
       <div class="two wide field">
-        <label>รหัสวิชา</label><input maxlength="9" id="codesubject" type="text" value="333" name="subjectcode" placeholder="2240 2240">
+        <label>รหัสวิชา</label><input maxlength="9" id="codesubject" type="text" name="subjectcode" placeholder="2240 2240">
       </div>
       <div class="four wide field">
       <label>ชื่อวิชา</label><input type="text" name="subjectname" placeholder="วิทยาศาสตร์เพื่องานอาชีพ...">
@@ -98,7 +100,7 @@
      <input type="text" name="reason">
     </div>
   </div>
-  <input type="submit" class="btn btn-success" id="insert" value="บันทึกข้อมูล">
+  <input type="submit" class="ui green button" id="insert" value="บันทึกข้อมูล">
 </form>
     </div>
     <br>

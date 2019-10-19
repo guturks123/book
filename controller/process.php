@@ -48,16 +48,16 @@ if ($action == 'create') {
 	if (empty($termyear) || empty($subjectcode) || empty($subjectname) || empty($class) || empty($teacher)
 		|| empty($id) || empty($id2) || empty($bookyear) || empty($bookname) ||
 		empty($publisher) || empty($price) || empty($reason)) {
-		$result['error'] = true;
-		$result['message'] = 'กรุณากรอกข้อมูลให้ครบ';
+		echo 'Error';
 	} else {
 		$con->insert($sql);
-		$result['message'] = 'เพิ่มข้อมูลสำเร็จ';
+		echo 'Success';
+		$result['message'] = 'Success';
 	}
 	;
 
 }
 
-echo json_encode($result, JSON_UNESCAPED_UNICODE);
+//echo json_encode($result, JSON_UNESCAPED_UNICODE);
 
 ?>

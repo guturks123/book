@@ -50,7 +50,15 @@
         method: "post",
         data:$('#insert-form').serialize(),
         success:function(data){
+            console.log(data);
+              var a = data;
+            if(a == 'Success'){
+              $('#insert-form')[0].reset();
+              document.getElementById("alert").innerHTML = '<div class="ui green inverted segment"><h2><i class="fas fa-check"></i>&nbsp;&nbsp;บันทึกข้อมูลสำเร็จ !</h2></div><br>';
 
+            }else{
+              document.getElementById("alert").innerHTML = '<div class="ui red inverted segment"><h2><i class="fas fa-exclamation"></i>&nbsp;&nbsp;ไม่สามารถบันทึกข้อมูลได้ กรุณากรอกแบบฟอร์มให้ถูกต้อง !</h2></div><br>'
+            }
         }
       });
     });
